@@ -76,7 +76,7 @@ List of pre-installed applications for all users
 
 ### Personal data
 
-You should store personal data inside your own home directory, `/Volumes/DATA/userid`.
+You should store personal data inside your home directory, `/Volumes/DATA/userid`.
 
 ### Data sharing
 Team shared directory, `/Volumes/DATA/shared`, allows to share data with other users.  
@@ -91,6 +91,6 @@ chmod -R 755 ~/shared/data_for_sharing
 
 `shinykim@kasi.re.kr`
 
-- **Installing applications**&emsp;application name and url
-- **Connection**&emsp;error message or screen capture
+- **Installing applications**&emsp;Send me application name and url
+- **Connection**&emsp;Send me the error message or captured screen
 
