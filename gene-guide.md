@@ -10,8 +10,8 @@
 
 ### Data storage
 - **System and Apps**&emsp;1 TB flash storage - Apple SSD
-- **User data**&emsp;21 TB external SAS disk - Promise Pegasus2 R8
-- **Observation data**&emsp;42 TB external SAS disk - Promise Pegasus3 R8
+- **User data**&emsp;19 TB external SAS disk - Promise Pegasus2 R8
+- **Observation data**&emsp;38 TB external SAS disk - Promise Pegasus3 R8
 
 ## Access
 
