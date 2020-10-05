@@ -29,6 +29,22 @@ vnc://gene.kasi.re.kr
 
 <kbd><img src="./images/vnc_03.png"/></kbd>
 
+#### Screen size adjustment
+
+When using screen sharing, you may want the screen to fit exactly the size of 
+your monitor. The screen size can be adjusted using the `Resolution` option in
+`System Preference` > `Display`. Note that **you should never select the 
+`Default for display` option** (if you accidentally select that option and you
+no longer see the shared screen, you should ask system administrator for help).
+
+<kbd><img src="./images/vnc_05.png"/></kbd>
+
+<kbd><img src="./images/vnc_06.png"/></kbd>
+
+In the `Scaled` option, you have to select the resolution you want, and if the
+desired resolution does not appear, click `Scaled` with the `Option` key to see
+all the supported resolution options.
+
 ### SSH
 
 ```bash
