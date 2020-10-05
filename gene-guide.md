@@ -23,11 +23,11 @@ Using `Screen Sharing.app` in macOS
 vnc://gene.kasi.re.kr
 ```
 
-<kbd><img src="./images/vnc_01.png"/></kbd>
+<kbd><img src="./images/vnc_01-2.png"/></kbd>
 
-<kbd><img src="./images/vnc_02.png"/></kbd>
+<kbd><img src="./images/vnc_02-2.png"/></kbd>
 
-<kbd><img src="./images/vnc_03.png"/></kbd>
+<kbd><img src="./images/vnc_03-2.png"/></kbd>
 
 #### Screen size adjustment
 
