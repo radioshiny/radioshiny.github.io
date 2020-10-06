@@ -33,15 +33,17 @@ vnc://gene.kasi.re.kr
 
 When using screen sharing, you may want the screen to fit exactly the size of 
 your monitor. The screen size can be adjusted using the `Resolution` option in
-`System Preference` > `Display`. Note that **you should never select the 
-`Default for display` option** (if you accidentally select that option and you
-no longer see the shared screen, you should ask system administrator for help).
+`System Preference` > `Display`. Note that the screen sharing cannot read the
+resolution of the remove monitor, so **you should never select the `Default 
+for display` option** (if you accidentally select that option and you no longer 
+see the shared screen, you may need to ask system administrator to restore the
+screen).
 
 <kbd><img src="./images/vnc_05.png"/></kbd>
 
 <kbd><img src="./images/vnc_06.png"/></kbd>
 
-In the `Scaled` option, you have to select the resolution you want, and if the
+In the `Scaled` option, you can select the resolution you want, and if the
 desired resolution does not appear, click `Scaled` with the `Option` key to see
 all the supported resolution options.
 
@@ -95,13 +97,52 @@ List of pre-installed applications for all users
 You should store personal data inside your home directory, `/Volumes/DATA/userid`.
 
 ### Data sharing
-Team shared directory, `/Volumes/DATA/shared`, allows to share data with other users.  
-Your home has a soft link to the shared directory.
+
+Team shared directory, `/Volumes/DATA/shared`, allows to share data with other 
+users. Your home has a soft link `~/shared` to the shared directory.
 
 ```bash
 mv data_for_sharing ~/shared/data_for_sharing
 chmod -R 755 ~/shared/data_for_sharing
 ```
+
+### Using Starlink
+
+There are two versions of Starlink installed, the latest officially released
+version, 2018A and the more recent EAO build (rsync).
+
+In order to use Starlink, you need to load the environment settings.
+
+#### For the 2018A
+
+The alias for loading the environment settings for the 2018A version and 
+frequently used libraries at the same time is `starlink`. `starlink` is a set of 
+commands below:
+
+```bash
+export STARLINK_DIR=/software/star-2018A
+source STARLINK_DIR/etc/profile
+convert
+kappa
+smurf
+```
+
+#### For the EAO build
+
+The alias for loading the EAO build is `stardev`. `stardev` is a set of commands
+below:
+
+```bash
+export STARLINK_DIR=/software/stardev
+source STARLINK_DIR/etc/profile
+```
+
+### Observation data
+
+Previous observations by our team are kept in separate external storage. The 
+absolute path of the external storage is `/Volumes/OBS`, and can also be 
+accessed through the soft link `~/obs` to each user's personal home. All users 
+can read and access observations, but cannot modify them.
 
 ## Contact to admin
 
