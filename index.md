@@ -1,7 +1,17 @@
 # radioshiny.github.io
 
-## [Curriculum Vitae](./cv.html)
+## Shinyoung Kim
 
-## [Thursday meeting](./thu-meeting.md)
+### [Curriculum Vitae](./cv.html)
 
-## [User guide for GENE.kasi.re.kr](./gene-guide.md)
+## Code Repositories
+
+### [FUNStools](https://github.com/radioshiny/funstools)
+
+### [multiaxes](https://github.com/radioshiny/multiaxes)
+
+## KASI works
+
+### [Thursday meeting](./thu-meeting.md)
+
+### [User guide for GENE.kasi.re.kr](./gene-guide.md)

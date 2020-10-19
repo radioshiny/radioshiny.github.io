@@ -23,11 +23,9 @@ Using `Screen Sharing.app` in macOS
 vnc://gene.kasi.re.kr
 ```
 
-<kbd><img src="./images/vnc_01-2.png"/></kbd>
-
-<kbd><img src="./images/vnc_02-2.png"/></kbd>
-
-<kbd><img src="./images/vnc_03-2.png"/></kbd>
+![image-vnc1](./images/vnc_01-2.png)
+![image-vnc2](./images/vnc_02-2.png)
+![image-vnc3](./images/vnc_03-2.png)
 
 #### Screen size adjustment
 
@@ -39,9 +37,8 @@ for display` option** (if you accidentally select that option and you no longer
 see the shared screen, you may need to ask system administrator to restore the
 screen).
 
-<kbd><img src="./images/vnc_05.png"/></kbd>
-
-<kbd><img src="./images/vnc_06.png"/></kbd>
+![image-vnc4](./images/vnc_05.png)
+![image-vnc5](./images/vnc_06.png)
 
 In the `Scaled` option, you can select the resolution you want, and if the
 desired resolution does not appear, click `Scaled` with the `Option` key to see
