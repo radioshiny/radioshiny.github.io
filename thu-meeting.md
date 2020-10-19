@@ -2,6 +2,9 @@
 
 This is a regular team meeting organized by Dr. Chang Won Lee.
 
+* Time: Every Thursday at 3 pm
+* Place: (**flexible**) #329 JYS hall in KASI
+
 ## List of papers discussed
 
 <!--
@@ -75,7 +78,29 @@ This is a regular team meeting organized by Dr. Chang Won Lee.
 
 ### 2019
 
-* ...
+* Sep. 5 &nbsp;/&nbsp; Shinyoung Kim <br>
+**Caselli** et al. **2019**. *"The Central 1000 au of a Pre-stellar Core Revealed with ALMA. I. 1.3 mm Continuum Observations"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2019ApJ...874...89C)
+
+* Aug. 22 &nbsp;/&nbsp; Dr. Kyounghee Kim <br>
+**Tokuda** et al. **2019**. *"A centrally concentrated sub-solar-mass starless core in the Taurus L1495 filamentary complex"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2019PASJ...71...73T)
+
+* Aug. 8 &nbsp;/&nbsp; Dr. Eun Jung Chung <br>
+**André** et al. **2019**. *"The role of molecular filaments in the origin of the prestellar core mass function and stellar initial mass function"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2019A&A...629L...4A)
+
+* Aug. 1 &nbsp;/&nbsp; Dr. Hyunju Yoo <br>
+**Dobashi** et al. **2019**. *"Discovery of CCS Velocity-coherent Substructures in the Taurus Molecular Cloud 1"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2019ApJ...879...88D)
+
+* Jul. 25 &nbsp;/&nbsp; Shinyoung Kim <br>
+**Arzoumanian** et al. **2019**. *"Characterizing the properties of nearby molecular filaments observed with Herschel"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2019A&A...621A..42A)
+
+* Jul. 11 &nbsp;/&nbsp; Dr. Kyounghee Kim <br>
+**Chen** et al. **2019**. *"Filamentary Accretion Flows in the Infrared Dark Cloud G14.225-0.506 Revealed by ALMA"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2019ApJ...875...24C)
 
 ## Meeting members
 
