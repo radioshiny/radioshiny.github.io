@@ -14,9 +14,15 @@ Astronomy and Space science
 Office Tel. +82-42-865-2108  
 shinykim (at) kasi.re.kr
 
-### [Curriculum Vitae](./cv.html)
+<!--### [Curriculum Vitae](./cv.html)-->
 
-### [Curriculum Vitae (markdown)](./cv_new.md)
+### [Curriculum Vitae](./cv_new.md)
+
+## Research Project
+
+### [JCMT-DCF](./jcmt-dcf.md)
+
+### [TRAO-FUNS](./trao-funs.md)
 
 ## Code Repositories
 
