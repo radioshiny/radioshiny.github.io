@@ -15,6 +15,10 @@ This is a regular team meeting organized by Dr. Chang Won Lee.
 
 ### 2020
 
+* Nov. 5 &nbsp;/&nbsp; Dr. Kyounghee Kim <br>
+**Gong** et al. **2018**. *"The Serpens filament at the onset of slightly supercritical collapse"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2018A&A...620A..62G)
+
 * Oct. 29 &nbsp;/&nbsp; Dr. Hyunju Yoo <br> 
 **Könyves** et al. **2020**. 
 *"Properties of the dense core population in Orion B as seen by the Herschel Gould Belt survey"*
