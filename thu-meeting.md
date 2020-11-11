@@ -20,28 +20,23 @@ This is a regular team meeting organized by Dr. Chang Won Lee.
 [(ads)](https://ui.adsabs.harvard.edu/abs/2018A&A...620A..62G)
 
 * Oct. 29 &nbsp;/&nbsp; Dr. Hyunju Yoo <br> 
-**Könyves** et al. **2020**. 
-*"Properties of the dense core population in Orion B as seen by the Herschel Gould Belt survey"*
+**Könyves** et al. **2020**. *"Properties of the dense core population in Orion B as seen by the Herschel Gould Belt survey"*
 [(ads)](https://ui.adsabs.harvard.edu/abs/2020A%26A...635A..34K)
  
 * Oct. 22 &nbsp;/&nbsp; Shinyoung Kim <br>
-**André** et al. **2019**.
-*"The role of molecular filaments in the origin of the prestellar core mass function and stellar initial mass function"*
+**André** et al. **2019**. *"The role of molecular filaments in the origin of the prestellar core mass function and stellar initial mass function"*
 [(ads)](https://ui.adsabs.harvard.edu/abs/2019A%26A...629L...4A)
 
 * Oct. 8 &nbsp;/&nbsp; Dr. Nguyen Thi Phuong <br>
-**Imai** et al. **2019**.
-*"Unveiling a Few Astronomical Unit Scale Rotation Structure around the Protostar in B335"*
+**Imai** et al. **2019**. *"Unveiling a Few Astronomical Unit Scale Rotation Structure around the Protostar in B335"*
 [(ads)](https://ui.adsabs.harvard.edu/abs/2019ApJ...873L..21I)
 
 * Sep. 24 &nbsp;/&nbsp; Dr. Eun Jung Chung <br>
-**Zhang** et al. **2020**
-*"Fragmentation of star-forming filaments in the X-shaped nebula of the California molecular cloud"*
+**Zhang** et al. **2020**. *"Fragmentation of star-forming filaments in the X-shaped nebula of the California molecular cloud"*
 [(ads)](https://ui.adsabs.harvard.edu/abs/)
 
 * Sep. 10 &nbsp;/&nbsp; Shinyoung Kim <br>
-**Pillai** et al. **2020**.
-*"Magnetized filamentary gas flows feeding the young embedded cluster in Serpens South"*
+**Pillai** et al. **2020**. *"Magnetized filamentary gas flows feeding the young embedded cluster in Serpens South"*
 [(ads)](https://ui.adsabs.harvard.edu/abs/2020NatAs.tmp..159P)
 
 * Sep. 3 &nbsp;/&nbsp; Dr. Hyunju Yoo <br>
@@ -105,6 +100,24 @@ This is a regular team meeting organized by Dr. Chang Won Lee.
 * Jul. 11 &nbsp;/&nbsp; Dr. Kyounghee Kim <br>
 **Chen** et al. **2019**. *"Filamentary Accretion Flows in the Infrared Dark Cloud G14.225-0.506 Revealed by ALMA"*
 [(ads)](https://ui.adsabs.harvard.edu/abs/2019ApJ...875...24C)
+
+### 2018
+
+* Jul. 11 &nbsp;/&nbsp; Shinyoung Kim <br>
+**Myers** **2009**. *"Filamentary Structure of Star-forming Complexes"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2009ApJ...700.1609M)
+
+* Jun. 28 &nbsp;/&nbsp; Dr. Archana Soam <br>
+**Punanova** et al. **2018**. *"Kinematics of dense gas in the L1495 filament"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2018A&A...617A..27P)
+
+* Apr. 5 &nbsp;/&nbsp; Dr. Mi-Ryang Kim <br>
+**Hsieh** et al. **2018**. *"Probing Episodic Accretion in Very Low Luminosity Objects"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2018ApJ...854...15H)
+
+* Mar. 15 &nbsp;/&nbsp; Shinyoung Kim <br>
+**Zamora-Avilés** et al. **2017**. *"Are fibres in molecular cloud filaments real objects?"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2017MNRAS.472..647Z)
 
 ## Meeting members
 
