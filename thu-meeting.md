@@ -13,6 +13,24 @@ This is a regular team meeting organized by Dr. Chang Won Lee.
 [(ads)](https://ui.adsabs.harvard.edu/abs/)
 -->
 
+### 2021
+
+* May 20 &nbsp;/&nbsp; Dr. Nguyen Thi Phuong <br>
+**Tokuda** et al. **2019**. *"A centrally concentrated sub-solar-mass starless core in the Taurus L1495 filamentary complex"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2019PASJ...71...73T)
+
+* May 6 &nbsp;/&nbsp; Dr. Hyunju Yoo <br>
+**Kumar** et al. **2021**. *"Unifying low- and high-mass star formation through density-amplified hubs of filaments. The highest mass stars (>100 M⊙) form only in hubs"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2020A&A...642A..87K)
+  
+* Apr. 1 &nbsp;/&nbsp; Dr. Yusuke Aso <br>
+**Santamaría-Miranda** et al. **Year**. *"ALMA observations of the early stages of substellar formation in the Lupus 1 and 3 molecular clouds"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2021A&A...646A..10S)
+
+* Mar. 4 &nbsp;/&nbsp; Shinyoung Kim <br>
+**Koumpia** et al. **2020**. *"Mapping the H2D+ and N2H+ emission toward prestellar cores. Testing dynamical models of the collapse using gas tracers"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2020A&A...643A..61K)
+
 ### 2020
 
 * Nov. 5 &nbsp;/&nbsp; Dr. Kyounghee Kim <br>
@@ -137,8 +155,8 @@ This is a regular team meeting organized by Dr. Chang Won Lee.
 ### KNUE
 
 - Prof. Jungjoo Sohn
-- Wonjae Shim
 
 ### Visitor
 
 - Dr. Shanghuo Li (KASI)
+- Dr. Yusuke Aso (KASI)
