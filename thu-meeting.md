@@ -3,7 +3,7 @@
 This is a regular team meeting organized by Dr. Chang Won Lee.
 
 * Time: Every Thursday at 3 pm
-* Place: (**flexible**) #329 JYS hall in KASI
+* Place: (**flexible**) #331-2 JYS hall in KASI
 
 ## List of papers discussed
 
