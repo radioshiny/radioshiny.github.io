@@ -15,6 +15,14 @@ This is a regular team meeting organized by Dr. Chang Won Lee.
 
 ### 2021
 
+* June 10 &nbsp;/&nbsp; Dr. Kyounghee Kim <br>
+**Gong** et al. **2021**. *"Physical and chemical structure of the Serpens filament: Fast formation and gravity-driven accretion"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2021A&A...646A.170G)
+
+* June 3 &nbsp;/&nbsp; Dong-hyuk Koh <br>
+**Kawabe** et al. **2018**. *"Extremely Dense Cores Associated with Chandra Sources in Ophiuchus A: Forming Brown Dwarfs Unveiled?"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2018ApJ...866..141K)
+
 * May 20 &nbsp;/&nbsp; Dr. Nguyen Thi Phuong <br>
 **Tokuda** et al. **2019**. *"A centrally concentrated sub-solar-mass starless core in the Taurus L1495 filamentary complex"*
 [(ads)](https://ui.adsabs.harvard.edu/abs/2019PASJ...71...73T)
