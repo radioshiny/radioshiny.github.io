@@ -15,6 +15,10 @@ This is a regular team meeting organized by Dr. Chang Won Lee.
 
 ### 2021
 
+* June 24 &nbsp;/&nbsp; Dr. Nguyen Thi Phuong <br>
+**Maureira** et al. **2020**. *"ALMA observations of envelopes around first hydrostatic core candidates"*
+[(ads)](https://ui.adsabs.harvard.edu/abs/2020MNRAS.499.4394M)
+
 * June 10 &nbsp;/&nbsp; Dr. Kyounghee Kim <br>
 **Gong** et al. **2021**. *"Physical and chemical structure of the Serpens filament: Fast formation and gravity-driven accretion"*
 [(ads)](https://ui.adsabs.harvard.edu/abs/2021A&A...646A.170G)
