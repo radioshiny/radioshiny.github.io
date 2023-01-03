@@ -1,8 +1,8 @@
 title: Shinyoung Kim
 description: Shinyoung Kim's CV, docs, and code repositories.
-remote_theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 url: https://radioshiny.github.io
 
 # Color scheme supports "light" (default) and "dark"
-# color_scheme: dark
+color_scheme: dark
