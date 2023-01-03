@@ -46,7 +46,7 @@ Figure 1.
 The example data was made up of virtual to have the same contents as the output result of the `fil_finder` algorithm. 
 This is a python dictionary, containing the image, the mask, and the skeleton data, saved to the `pickle`.
 
-```python{% raw %}
+```python
 skeleton = {'image': numpy.2darray,    # map from observation, dtype('float')
             'mask': numpy.2darray,     # filament mask, dtype('bool')
             'skeleton': numpy.2darray, # skeleton image, dtype('bool')
@@ -61,7 +61,7 @@ It consists of the x-axis as the position offset along the filament (or skeleton
 
 ### Load libraries and skeleton data
 
-```python{% raw %}
+```python
 import numpy as np
 import pickle
 from astropy import units as u
@@ -80,14 +80,14 @@ dp = skeleton['y']
 
 ### Calculate filament length: sum of point-to-point separation
 
-```python{% raw %}
+```python
 len_ptp = np.sqrt((dp[1:]-dp[:-1])**2+(rp[1:]-rp[:-1])**2).sum()
 print('L_fil (ptp) = {:.3f} pixel'.format(len_ptp))
 ```
 
 ### Make B-spline skeleton
 
-```python{% raw %}
+```python
 tck, _ = splprep([rp, dp])
 sx, sy = splev(np.linspace(0, 1, int(len_ptp+0.5)), tck)
 len_spl = np.sqrt((sx[1:]-sx[:-1])**2+(sy[1:]-sy[:-1])**2).sum()
@@ -99,7 +99,7 @@ print('L_fil (spl) = {:.3f} pixel'.format(len_spl))
 
 ### Make new pixel coordinates
 
-```python{% raw %}
+```python
 ll = np.linspace(0, 1, int(len_spl*10))
 dx, dy = splev(ll, tck)
 ll *= np.sqrt((dx[1:]-dx[:-1])**2+(dy[1:]-dy[:-1])**2).sum()
@@ -119,7 +119,7 @@ for d in range(map.shape[0]):
 
 ### Convert unit from pixel to pc
 
-```python{% raw %}
+```python
 pixel_scale = 4*u.arcsec
 distance = 470*u.pc
 
@@ -129,7 +129,7 @@ yoff_pc = yoff*pixel_scale.value*distance.value*u.au.to(u.pc)
 
 ### Save result
 
-```python{% raw %}
+```python
 skeleton['sx'] = sx
 skeleton['sy'] = sy
 skeleton['length'] = len_spl
@@ -147,7 +147,7 @@ with open('skeleton.dat', 'wb') as f:
 
 Script for Figure 1.
 
-```python{% raw %}
+```python
 fig, ax = plt.subplots(1, 5, sharex='all', sharey='all')
 
 ax[0].imshow(map, origin='lower', cmap='rainbow')
@@ -179,7 +179,7 @@ fig.savefig('fig_new_coords_from_skeleton.pdf')
 
 ### Load libraries and skeleton data
 
-```python{% raw %}
+```python
 import numpy as np
 import pickle
 from astropy.modeling.models import Gaussian1D
@@ -199,7 +199,7 @@ Emission maps with the mask (white contour) and the skeleton (black curve).
 (a) Pixelated skeleton.
 (b) B-spline skeleton.
 
-```python{% raw %}
+```python
 fig, ax = plt.subplots(1, 2, sharey='all')
 
 ax[0].imshow(skel['image'], origin='lower', cmap='rainbow')
@@ -226,7 +226,7 @@ fig.savefig('fig_example_map.png', dpi=200)
 
 Filament coordinates make easy to prepare data for model fit.
 
-```python{% raw %}
+```python
 # make masks
 mask1 = skel['mask']
 mask2 = mask1 & (skel['yoff'] < 0.5)
@@ -259,7 +259,7 @@ The points' darkness decreases with radial distance from the skeleton.
 (b) only the pixels located on the skeleton.
 The red curves show best-fit models that contain a filament and three cores.
 
-```python{% raw %}
+```python
 # make color tone of pixels to show radial distance from skeleton
 tone = 2-skel['yoff']
 tone = tone/tone[mask1].max()
@@ -296,7 +296,7 @@ fig.savefig('fig_example_longitudinal_profile.png', dpi=200)
 
 Using the results of Example 2.
 
-```python{% raw %}
+```python
 sep1 = core2.mean.value-core1.mean.value
 sep2 = core3.mean.value-core2.mean.value
 sep = np.mean([sep1, sep2])
@@ -309,7 +309,7 @@ print('Mean_core_seps = {:.3f} pc'.format(sep))
 
 Using the results of Example 2 and 3.
 
-```python{% raw %}
+```python
 # divide core and filament region
 mask_core = np.abs(skel['xoff_pc']-core1.mean.value) < sep/4
 mask_core += np.abs(skel['xoff_pc']-core2.mean.value) < sep/4
@@ -339,7 +339,7 @@ Radial intensity profile of the filament.
 Blue dots and curve show the data and best-fit model for the core region,
 and green dots and curve show those for the filament region without core.
 
-```python{% raw %}
+```python
 # maks x data to plot best-fit model
 fit_x = 10**np.linspace(-3.7, -1.4, 100)
 
