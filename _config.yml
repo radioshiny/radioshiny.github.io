@@ -5,4 +5,4 @@ remote_theme: just-the-docs/just-the-docs
 url: https://radioshiny.github.io
 
 # Color scheme supports "light" (default) and "dark"
-color_scheme: dark
+color_scheme: shiny
