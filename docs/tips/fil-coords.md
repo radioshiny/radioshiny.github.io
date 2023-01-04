@@ -41,7 +41,7 @@ Figure 1.
 
 ## Example data
 
-[Download](./skeleton.dat)
+[Download](../../skeleton.dat){: .btn .btn-green }
 
 The example data was made up of virtual to have the same contents as the output result of the `fil_finder` algorithm. 
 This is a python dictionary, containing the image, the mask, and the skeleton data, saved to the `pickle`.
