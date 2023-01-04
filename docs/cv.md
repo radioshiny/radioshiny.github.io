@@ -5,20 +5,19 @@ nav_order: 2
 ---
 
 # Curriculum Vitae
+{: .no_toc }
 
 ## Shinyoung Kim
+{: .no_toc }
 
 Ph.D in Astrophysics
+{: .h3 }
 
-**Korea Astronomy and Space Science Institute (KASI)**  
-Radio Astronomy Research Group, Radio Astronomy Division
+## Table of contents
+{: .no_toc .text-delta }
 
-776 Daedeok-daero, Yuseong-gu, Daejeon, 34055, Republic of KOREA  
-\#225 JYS Hall
-
-Office Tel. +82 42 865 2108  
-shinykim (at) kasi.re.kr  
-radioshiny (at) gmail.com
+1. TOC
+{:toc}
 
 ## Research Interest
 
@@ -232,6 +231,18 @@ Kyungpook National University (KNU)
 
 * *Radio Observation of L1251F Using HCN (J=1&ndash;0) Line*  
 &nbsp;&nbsp;\- **Protostars and Planets VI** &nbsp;(2013.07. / Heidelberg, Germany)
+
+## Contact
+
+**Korea Astronomy and Space Science Institute (KASI)**  
+Radio Astronomy Research Group, Radio Astronomy Division
+
+776 Daedeok-daero, Yuseong-gu, Daejeon, 34055, Republic of KOREA  
+\#225 JYS Hall
+
+Office Tel. +82 42 865 2108  
+shinykim (at) kasi.re.kr  
+radioshiny (at) gmail.com
 
 ---
 

@@ -6,3 +6,6 @@ url: https://radioshiny.github.io
 
 # Color scheme supports "light" (default) and "dark"
 color_scheme: shiny
+
+back_to_top: true
+back_to_top_text: "Back to top"
