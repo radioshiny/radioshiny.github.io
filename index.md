@@ -6,6 +6,7 @@ permalink: /
 ---
 
 # Shinyoung Kim
+{: .no_toc }
 
 Ph.D in Astrophysics
 
@@ -18,5 +19,13 @@ Radio Astronomy Research Group, Radio Astronomy Division
 Office Tel. +82 42 865 2108  
 shinykim (at) kasi.re.kr  
 radioshiny (at) gmail.com
+
+----
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ----
