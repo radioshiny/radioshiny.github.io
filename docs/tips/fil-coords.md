@@ -374,7 +374,14 @@ ang = np.arctan(grad[0]/grad[1])
 # align direction
 ang[ang < 0] += np.pi
 ang[ang > np.pi] -= np.pi
+
+# unit convert to deg
+para_deg = ang*u.rad.to(u.deg)
+norm_deg = (ang+np.pi/2)*u.rad.to(u.deg)
 ```
+
+- `para_deg` : array of angles parallel to the skeleton.
+- `norm_deg` : array of angles perpendicular to the skeleton.
 
 ![fig5](../../images/fig_example_vector.png)
 Figure 5.
