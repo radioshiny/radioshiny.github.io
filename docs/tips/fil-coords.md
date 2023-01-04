@@ -362,4 +362,50 @@ fig.savefig('fig_example_radial_profile.pdf')
 fig.savefig('fig_example_radial_profile.png', dpi=200)
 ```
 
+### Example 5. Parallel or normal vectors to the skeleton.
+
+Easy to calculate angles of parallel or normal to the skeleton for each pixel.
+
+```python
+# calculate parallel vectors for all pixels
+grad = np.gradient(skel['xoff'])
+ang = np.arctan(grad[0]/grad[1])
+
+# align direction
+ang[ang < 0] += np.pi
+ang[ang > np.pi] -= np.pi
+```
+
+![fig5](../../images/fig_example_vector.png)
+Figure 5.
+(a) Parallel vectors to the skeleton on each pixel.
+(b) Normal vectors.
+
+```python
+# vector position array
+yy, xx = np.mgrid[:25, :11]
+
+# draw figure
+fig, ax = plt.subplots(1, 2, sharex='all', sharey='all')
+
+ax[0].imshow(skel['image'], origin='lower', cmap='Greys')
+ax[0].plot(skel['sx'], skel['sy'], color='r')
+ax[0].quiver(xx, yy, np.cos(ang), np.sin(ang), color='b', scale=20)
+ax[0].set_xlabel('R.A. (px)')
+ax[0].set_ylabel('Dec. (px)')
+
+ax[1].imshow(skel['image'], origin='lower', cmap='Greys')
+ax[1].plot(skel['sx'], skel['sy'], color='r')
+ax[1].quiver(xx, yy, np.cos(ang+np.pi/2), np.sin(ang+np.pi/2), color='b', scale=20)
+
+for i in range(2):
+    ax[i].set_xticks([0, 5, 10])
+
+for i, ii in enumerate('ab'):
+    ax[i].annotate('({})'.format(ii), xy=(9, 23), fontsize='large', ha='center', va='center')
+
+fig.savefig('fig_example_vector.pdf')
+fig.savefig('fig_example_vector.png', dpi=200)
+```
+
 ---
