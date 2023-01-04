@@ -9,12 +9,10 @@ parent: KASI Works
 
 This is a regular team meeting organized by Dr. Chang Won Lee.
 
-<dl>
-  <dt>Time</dt>
-  <dd>Every Thursday at 3 pm</dd>
-  <dt>Place</dt>
-  <dd>(**flexible**) #331-1 JYS hall in KASI</dd>
-</dl>
+* Time: Every Thursday at 3 pm
+* Place: (**flexible**) #331-1 JYS hall in KASI
+
+---
 
 ## Table of contents
 {: .no_toc .text-delta }

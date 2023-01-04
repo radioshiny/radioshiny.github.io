@@ -8,5 +8,3 @@ permalink: docs/tips
 
 # Tips for Astronomers
 {: .no_toc }
-
----
