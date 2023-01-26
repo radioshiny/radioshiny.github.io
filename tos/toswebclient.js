@@ -99,7 +99,7 @@ if ('WebSocket' in window) {
         document.getElementById('traoLST').innerHTML = timeArr[5];
     };
 
-    var ws = new WebSocket(`ws://${serverIP}:8220`);
+    var ws = new WebSocket(`wss://${serverIP}:8220`);
 
     ws.onopen = function() {
         console.log('Connected to Server'); 
@@ -264,7 +264,7 @@ if ('WebSocket' in window) {
 
     ws.onclose = function() { 
         try {
-            ws = new WebSocket(`ws://${serverIP}:8220`);
+            ws = new WebSocket(`wss://${serverIP}:8220`);
         } catch (error) {
             console.log(error);
         } finally {
