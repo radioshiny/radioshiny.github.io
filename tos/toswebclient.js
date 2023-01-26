@@ -22,7 +22,7 @@ if ('WebSocket' in window) {
     var inputChat = document.getElementById('divAfterLogin');
     var audioLog = document.getElementById('logAudio');
 
-    var serverIP = '210.98.27.27';
+    var serverIP = '100.40.2.65';
     var loginUser = 'none';
     var staffLogin = false;
     var userLogin = false;
