@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+        <title>TRAO Observation Status</title>
+        <style>
+            body,h3,h4,h5,h6,p {font-family: Verdana, sans-serif;}
+            body {
+                margin: 0;
+                background-color: black;
+                font-size: 12px;
+                line-height: 12px;
+            }
+            h1 {
+                font-size: 108px;
+                line-height: 108px;
+                font-weight: bold;
+            }
+            h2 {
+                font-size: 34px;
+                line-height: 34px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 12px;
+                line-height: 15px;
+                margin: 0px 0px 3px 0px;
+            }
+            .prevent-select {
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE 10 and IE 11 */
+                user-select: none; /* Standard syntax */
+            }
+            .tos-frame {
+                margin: 0px 0px 0px 5px;
+                padding: 0px;
+            }
+            .tos-status {
+                font-family: Arial, sans-serif;
+                width: 615px;
+                height: 150px;
+                padding: 12px 0px 0px 0px;
+                margin: 10px 15px 0px 5px;
+            }
+            .tos-btn {
+                font-family: Arial, sans-serif;
+                width: 150px!important;
+                height: 150px;
+                margin: 5px 0px 0px 5px;
+                display: block!important;
+            }            
+            .info-frame {
+                margin: 10px 10px 10px 10px;
+                padding: 0px;
+            }
+            .chat-frame {
+                margin: 10px 10px 10px 5px;
+                padding: 0px;
+            }
+            .chat-list {
+                width: 615px;
+                height: 345px;
+                margin: 0px 0px 0px 5px;
+                padding: 0px 10px 0px 10px;
+                overflow: auto;
+                color: #BBBBBB;
+                background-color: #222222;
+            }
+            .chat-input {
+                width: 615px;
+                margin: 5px 0px 0px 5px;
+                background-color: #222222;
+            }
+            .info-time {
+                font-family: "Lucida Console", Monaco, monospace;
+                font-size: 14px;
+                line-height: 16px;
+                color: cyan; 
+            }
+            .info-obs {
+                font-size: 14px;
+                line-height: 16px;
+            }
+            .info-panel {
+                font-size: 12px;
+                line-height: 16px;
+                color: #BBBBBB;
+                background-color: #222222;
+                text-align: center;
+                display: flex; 
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='tosLayout' style='display: flex; flex-direction: row;'>
+            <div style='width: 625px; margin: 0px;'>
+                <div class='tos-frame'>
+                    <div id='statTRAO' class='w3-center tos-status prevent-select' style='color: white; background-color: #222222;'>
+                        <h1>TRAO-14m</h1>
+                    </div>
+                    <div style='display: flex;'>
+                        <button id='btnMain' class='w3-btn tos-btn' style='color: #333333; background-color: #222222;'><h2>Maint.</h2></button>
+                        <button id='btnRain' class='w3-btn tos-btn' style='color: #333333; background-color: #222222;'><h2>Rain</h2></button>
+                        <button id='btnBrea' class='w3-btn tos-btn' style='color: #333333; background-color: #222222;'><h2>Break</h2></button>
+                        <button id='btnOnob' class='w3-btn tos-btn' style='color: #333333; background-color: #222222;'><h2>On obs.</h2></button>
+                    </div>
+                    <div style='display: flex;'>
+                        <button id='btnMeal' class='w3-btn tos-btn' style='color: #333333; background-color: #222222;'><h2>Meal</h2></button>
+                        <button id='btnAway' class='w3-btn tos-btn' style='color: #333333; background-color: #222222;'><h2>Away</h2></button>
+                        <button id='btnObsr' class='w3-btn tos-btn' style='color: #333333; background-color: #222222;'><h2>Obs.<br>Room</h2></button>
+                        <button id='btnRemo' class='w3-btn tos-btn' style='color: #333333; background-color: #222222;'><h2>Remote</h2></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class='info-frame'>
+                    <div class='info-panel prevent-select' style='width: 615px;'>
+                        <div style='padding-left: 25px;'>TRAO Now<br><span id='traoDate' class='info-time'>DDD DD MMM YYYY</span></div>
+                        <div style='padding-left: 25px;'>KST<br><span id='traoKST' class='info-time'>00:00</span></div>
+                        <div style='padding-left: 25px;'>UT<br><span id='traoUT' class='info-time'>00:00</span></div>
+                        <div style='padding-left: 25px;'>LST<br><span id='traoLST' class='info-time'>00:00</span></div>
+                        <div class='w3-center' style='padding-left: 25px; width: 220px;'>Current Observer<br><span id='obsNow' class='info-obs'>Unknown</span></div>
+                    </div>
+                </div>
+                <div class='chat-frame'>
+                    <div style='height: 10px; width: 615px; background-color: #222222; margin: 5px 0px 0px 5px; padding: 0;'></div>
+                    <div id='logChat' class='chat-list'></div>
+                    <audio id='logAudio'><source src='https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3' type='audio/mpeg'></audio>
+                    <div style='height: 10px; width: 615px; background-color: #222222; margin: 0px 0px 0px 5px; padding: 0;'></div>
+                    <div id='divBeforeLogin' class='chat-input' style='display: flex;'>
+                        <select id='iptLoginType' class='w3-input w3-round' name='iptLoginType' style='display: block; width: 200px; height: 30px;'>
+                            <option value='observer'>Observer</option> 
+                            <option value='traostaff'>TRAOstaff</option>
+                        </select>
+                        <div style='width: 5px;'></div>
+                        <input type='text' id='iptUserName' class='w3-input w3-round' placeholder='username' style='display: block; width: 330px; height: 30px;' />
+                        <input type='password' id='iptPassWord' class='w3-input w3-round' placeholder='password' style='display: none; width: 330px; height: 30px;' />
+                        <div style='width: 5px;'></div>
+                        <button id='btnLogin' class='w3-btn w3-round w3-teal w3-hover-yellow' style='width: 75px; height: 30px;'>Login</button>
+                    </div>
+                    <div id='divAfterLogin' class='chat-input' style='display: none;'>
+                        <input type='text' id='iptChat' class='w3-input w3-round' placeholder='Type your message here' style='display: block; width: 455px; height: 30px;' />
+                        <div style='width: 5px;'></div>
+                        <button id='btnChat' class='w3-btn w3-round w3-teal w3-hover-yellow' title='Send Message!' style='width: 75px; height: 30px;'>Send</button>
+                        <div style='width: 5px;'></div>
+                        <button id='btnLogout' class='w3-btn w3-round w3-grey w3-hover-orange' style='width: 75px; height: 30px;'>Logout</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <script type='text/javascript' src='toswebclient.js'></script>
+    </body>
+</html>
