@@ -70,7 +70,6 @@ To install GILDAS
 % vi ~/.zprofile
 alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
 alias vi='mvim'
-alias vim='mvim'
 ```
 
 ### Vundle
@@ -90,12 +89,21 @@ cp vimrc.txt ~/.vimrc
 
 ```shell
 % mv ~/.zshrc ~/.conda_init
-
 % vi ~/.zprofile
 
 alias pyc="source ~/.conda_init"
 
 % pyc
+```
+
+### Jupyter notebook
+Set to open jupyter notebook in Google Chrome
+
+```shell
+(base) % jupyter notebook --generate-config
+(base) % vi ~/.jupyter/jupyter_notebook_config.py
+
+c.NotebookApp.browser = 'open -a /Applications/Google\ Chrome.app %s'
 ```
 
 ## PyCharm
