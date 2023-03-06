@@ -5,9 +5,11 @@ parent: Tips
 ---
 
 # Mac Setup for Astronomy
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
@@ -17,12 +19,26 @@ parent: Tips
 
 Start with macOS 12 Monterey.
 
-## Name Setting
+## Names
 
 ```shell
 % sudo scutil --set ComputerName "SHINY's MacBook Pro KASI"
 % sudo scutil --set LocalHostName shinymbpkasi
 % sudo scutil --set HostName shinymbpkasi
+```
+
+## Shell
+
+(optional)
+
+```shell
+% vi ~/.zshrc
+PS1="%F{magenta}%n%F{cyan}(%m) %F{green}%3~ %F{default}%# "
+export CLICOLOR=1
+export TERM=xterm-256color
+
+% vi ~/.zprofile
+
 ```
 
 ## Xcode
@@ -70,6 +86,7 @@ To install GILDAS
 % vi ~/.zprofile
 alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
 alias vi='mvim'
+alias vim='mvim'
 ```
 
 ### Vundle
@@ -89,11 +106,22 @@ cp vimrc.txt ~/.vimrc
 
 ```shell
 % mv ~/.zshrc ~/.conda_init
+
 % vi ~/.zprofile
 
 alias pyc="source ~/.conda_init"
 
 % pyc
+```
+
+### Jupyter notebook
+Set to open jupyter notebook in Google Chrome
+
+```shell
+(base) % jupyter notebook --generate-config
+(base) % vi ~/.jupyter/jupyter_notebook_config.py
+
+c.NotebookApp.browser = 'open -a /Applications/Google\ Chrome.app %s'
 ```
 
 ## PyCharm
