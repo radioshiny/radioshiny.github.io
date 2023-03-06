@@ -96,16 +96,6 @@ alias pyc="source ~/.conda_init"
 % pyc
 ```
 
-### Jupyter notebook
-Set to open jupyter notebook in Google Chrome
-
-```shell
-(base) % jupyter notebook --generate-config
-(base) % vi ~/.jupyter/jupyter_notebook_config.py
-
-c.NotebookApp.browser = 'open -a /Applications/Google\ Chrome.app %s'
-```
-
 ## PyCharm
 
 [Download](https://www.jetbrains.com/ko-kr/pycharm/download/#section=mac)
