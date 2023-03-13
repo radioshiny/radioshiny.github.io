@@ -1,8 +1,4 @@
----
-layout: default
-title: Mac Server Security Checklist
-parent: KASI Works
----
+
 
 # Mac Server Security Checklist
 
