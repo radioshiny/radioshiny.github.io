@@ -19,6 +19,6 @@ permalink: docs/repos
 
 ## astroph-new
 
-[Documentation](https://astroph-new.readthedocs.io){: .btn .btn-green }
+[Documentation](https://astroph-new.readthedocs.io){: .btn .btn-blue .mr-2}
 [View it on GitHub](https://github.com/radioshiny/astroph_new){: .btn .btn-green }
 
