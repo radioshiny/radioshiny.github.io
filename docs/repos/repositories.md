@@ -2,6 +2,8 @@
 layout: default
 title: Code Repositories
 nav_order: 5
+has_children: true
+permalink: docs/repos
 ---
 
 # Code Repositories
@@ -17,5 +19,6 @@ nav_order: 5
 
 ## astroph-new
 
-[View it on GitHub](https://github.com/radioshiny/funstools){: .btn .btn-green }
+[Documentation](https://astroph-new.readthedocs.io){: .btn .btn-green }
+[View it on GitHub](https://github.com/radioshiny/astroph_new){: .btn .btn-green }
 
