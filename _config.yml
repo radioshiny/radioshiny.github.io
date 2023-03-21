@@ -9,3 +9,9 @@ color_scheme: shiny
 
 back_to_top: true
 back_to_top_text: "Back to top"
+
+search_enabled: true
+
+enable_copy_code_button: true
+
+heading_anchor: true
