@@ -15,13 +15,4 @@ vendor/
 .idea/radioshiny.github.io.iml
 .idea/vcs.xml
 .idea/inspectionProfiles/profiles_settings.xml
-old_docs/cv.css
-old_docs/cv.html
-old_docs/gene-guide.md
-old_docs/jcmt-dcf.md
-old_docs/mac-setup.md
-old_docs/map-share.html
-old_docs/map-share.py
-old_docs/trao-funs.md
-old_docs/mac-server-secure-check.md
-old_docs/
+/old_docs/
