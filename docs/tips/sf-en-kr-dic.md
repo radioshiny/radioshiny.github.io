@@ -129,6 +129,7 @@ parent: Tips
   - pointing observation 관측, 점관측
   - radio observation 전파관측
   - submilimeter observation 서브밀리미터관측
+- order of magnitude 자릿수, 크기정도
 
 # S
 
