@@ -1,6 +1,6 @@
 ---
 layout: default
-title: User guide for gene.kasi.re.kr
+title: gene.kasi.re.kr
 parent: KASI Works
 ---
 
