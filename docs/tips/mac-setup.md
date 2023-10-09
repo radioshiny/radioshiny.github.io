@@ -60,18 +60,18 @@ Start with macOS 13 Ventura.
 ### iTerm2 Setting
 
 - iTerm2
-  [ ] Make iTerm2 Default Term
+  - [ ] Make iTerm2 Default Term
   - Settings
     - Profiles
       - General
         - Working Directory
-          [ ] Reuse previous session's directory
+          - [ ] Reuse previous session's directory
       - Colors
         - Color Presets...
-          [ ] Pastel (Dark Background)
+          - [ ] Pastel (Dark Background)
       - Text
         - Font
-          [ ] Menlo
+          - [ ] Menlo
 
 ## Names
 
