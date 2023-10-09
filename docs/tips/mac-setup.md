@@ -183,16 +183,27 @@ To install GILDAS:
 % (echo; echo 'alias vi="mvim"') >> ~/.zprofile
 ```
 
-### Vundle
+Install `vundle` to install plug-in packages:
+
 ```shell
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-### .vimrc
+Download `.vimrc`:
+
 [Download](vimrc.txt)
+
 ```shell
 cp vimrc.txt ~/.vimrc
 ```
+
+Install plug-in packages:
+
+```shell
+vi ~/.vimrc
+```
+
+Execute `:BundleInstall`
 
 ## Anaconda
 
