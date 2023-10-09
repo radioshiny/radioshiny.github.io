@@ -117,11 +117,37 @@ License Agreement
 ## XQuartz
 [Download](https://www.xquartz.org)
 
-## GCC (gfortran)
-[Download](http://hpc.sourceforge.net)
+## Homebrew
+
 ```shell
-% sudo tar -xvf gcc-11.2-bin.tar -C /.
-% sudo tar -zxvf gcc-11.2-bin.tar.gz -C /.
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Add Homebrew to user PATH:
+
+```shell
+% (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/shiny/.zprofile
+% eval "$(/usr/local/bin/brew shellenv)"
+```
+
+## GCC (gfortran)
+
+```shell
+% brew install gcc
+```
+
+Confirm installation:
+
+```shell
+% gcc --version
+% gfortran --version
+```
+
+Make `gcc` link to Homebrew GCC instead of the Apple clang version.
+Apple Command Line Tools includes `/usr/bin/gcc`.
+
+```shell
+% ln -s /usr/local/bin/gcc-13 /usr/local/bin/gcc
 ```
 
 ## MacPorts
@@ -182,11 +208,7 @@ c.NotebookApp.browser = 'open -a /Applications/Google\ Chrome.app %s'
 
 [Download](https://www.jetbrains.com/ko-kr/pycharm/download/#section=mac)
 
-## Homebrew
 
-```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
 
 ### CARTA
 
