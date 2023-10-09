@@ -94,26 +94,6 @@ License Agreement
 % sudo xcodebuild -license
 ```
 
-## iTerm2
-
-[Download](https://iterm2.com)
-
-### iTerm2 Setting
-
-- iTerm2
-  - [ ] Make iTerm2 Default Term
-  - Settings
-    - Profiles
-      - General
-        - Working Directory
-          - [ ] Reuse previous session's directory
-      - Colors
-        - Color Presets...
-          - [ ] Pastel (Dark Background)
-      - Text
-        - Font
-          - [ ] Menlo
-
 ## XQuartz
 [Download](https://www.xquartz.org)
 
@@ -159,6 +139,26 @@ To install GILDAS
 ```shell
 % sudo port install gildas
 ```
+
+## iTerm2
+
+[Download](https://iterm2.com)
+
+### iTerm2 Setting
+
+- iTerm2
+  - [ ] Make iTerm2 Default Term
+  - Settings
+    - Profiles
+      - General
+        - Working Directory
+          - [ ] Reuse previous session's directory
+      - Colors
+        - Color Presets...
+          - [ ] Pastel (Dark Background)
+      - Text
+        - Font
+          - [ ] Menlo
 
 ## MacVim
 [Download](https://macvim-dev.github.io/macvim/)
