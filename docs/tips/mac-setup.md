@@ -112,6 +112,13 @@ Add Homebrew to user PATH:
 
 ## GCC (gfortran)
 
+[Download](https://hpc.sourceforge.net)
+
+> [!WARNING]
+> 2023.10.09. There is not suitable version for Ventura with x86_64.
+
+`gcc` can be installed using `brew`:
+
 ```shell
 % brew install gcc
 ```
