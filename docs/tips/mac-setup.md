@@ -106,7 +106,7 @@ License Agreement
 Add Homebrew to user PATH:
 
 ```shell
-% (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/shiny/.zprofile
+% (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> ~/.zprofile
 % eval "$(/usr/local/bin/brew shellenv)"
 ```
 
@@ -138,11 +138,18 @@ Apple Command Line Tools includes `/usr/bin/gcc`.
 ```
 
 ## MacPorts
-To install GILDAS
+
+To install GILDAS:
+
 [Download](https://www.macports.org/install.php)
 
 ### GILDAS (CLASS)
+
+> [!WARNING]
+> 2023.10.09. building `gildas` is failed.
+
 [Download](https://www.iram.fr/IRAMFR/GILDAS/)
+
 ```shell
 % sudo port install gildas
 ```
@@ -168,12 +175,12 @@ To install GILDAS
           - [ ] Menlo
 
 ## MacVim
+
 [Download](https://macvim-dev.github.io/macvim/)
+
 ```shell
-% vi ~/.zprofile
-alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
-alias vi='mvim'
-alias vim='mvim'
+% ln -s /Applications/MacVim.app/Contents/bin/mvim /usr/local/bin/mvim
+% (echo; echo 'alias vi="mvim"') >> ~/.zprofile
 ```
 
 ### Vundle
