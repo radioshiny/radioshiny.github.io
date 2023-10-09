@@ -15,7 +15,43 @@ parent: Tips
 
 ---
 
-Start with macOS 12 Monterey.
+Start with macOS 13 Ventura.
+
+## Application List
+
+- Adobe Creative Cloud
+  - Adobe Acrobat
+  - Adobe Illustrator
+  - Adobe Photoshop
+- Anaconda
+- balenaEtcher
+- Battle.net
+- Bugs Player
+- Canon Utility
+- CASA
+- Dropbox
+- Google Chrome
+- Grammarly
+- Hancom Office Hanguel 2014
+- iObserve
+- Kakao Talk
+- MacPorts
+- MacVim
+- Microsoft Office
+  - Microsoft Excel
+  - Microsoft Powerpoint
+  - Microsoft Word
+- Papers
+- PyCharm
+- SAOImage DS9
+- Secuway SSL
+- Slack
+- Steam
+- Stellarium
+- TIDAL
+- Visual Studio Code
+- Xcode
+- Zoom.us
 
 ## Names
 
