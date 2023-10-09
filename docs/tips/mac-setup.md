@@ -53,6 +53,26 @@ Start with macOS 13 Ventura.
 - Xcode
 - Zoom.us
 
+## iTerm2
+
+[Download](https://iterm2.com)
+
+### iTerm2 Setting
+
+- iTerm2
+  [ ] Make iTerm2 Default Term
+  - Settings
+    - Profiles
+      - General
+        - Working Directory
+          [ ] Reuse previous session's directory
+      - Colors
+        - Color Presets...
+          [ ] Pastel (Dark Background)
+      - Text
+        - Font
+          [ ] Menlo
+
 ## Names
 
 ```shell
@@ -81,7 +101,7 @@ Download and install the latest version of Xcode and Command Line Tools
 
 [Download 1](https://apps.apple.com/kr/app/xcode/id497799835?mt=12) (App Store)
 
-[Download 2](https://developer.apple.com/download/all/) (Apple Developer)
+[Download 2](https://developer.apple.com/download/all/?q=Xcode) (Apple Developer)
 
 ### Command Line Tools
 
@@ -185,10 +205,6 @@ add alias to `~/.zshrc` or `~/.zprofile`
 ```shell
 alias carta='/Applications/CARTA.app/Contents/MacOS/CARTA'
 ```
-
-## iTerm2
-
-[Download](https://iterm2.com)
 
 ## Dropbox
 
