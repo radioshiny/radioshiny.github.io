@@ -63,12 +63,13 @@ $ apt update
 $ apt install openssh-server net-tools
 ```
 
-Modify port.
+Modify ssh configuration.
 
 ```bash
 $ vi /etc/ssh/sshd_config
 
 Port 0000
+MaxAuthTries 3
 ```
 
 Set `ufw` to allow `openssh`.
@@ -89,7 +90,7 @@ $ netstat -tlp | grep "ssh"
 
 ### V3 Net for Linux Server
 
-[Download](http://210.110.233.66:8081/api.link/3d_baLoIH7HEWuMO-MA~.Z) install file.
+[Download](http://210.110.233.66:8081/api.link/3d_baLoIH7HEWuMO-MA~.Z) and install `v3net`.
 
 ```bash
 $ tar -zxvf v3net-linux-3.6.13.10.1025.tar.Z
@@ -161,4 +162,61 @@ V3 Net for Linux Server (Status information)
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
+### VADA Agent
+
+Install `VADA`.
+
+```bash
+$ mkdir vada
+$ cp VADA_Agent_LINUX.tar vada/.
+$ cd vada
+$ tar -xvf VADA_Agent_LINUX.tar
+
+collector_linux_i386
+collector_linux_ppc64le
+collector_linux
+vada_agent.conf
+inst
+autoinst
+collector.systemd
+collector
+
+$ chmod +x inst
+$ ./inst
+```
+
+Check the running status of the VADA Agent.
+
+```bash
+$ ps -ef | grep "vada"
+
+root       20422       1  0 10:48 ?        00:00:00 /opt/vada/agent/collector_linux -c /opt/vada/agent
+root       20423   20422  0 10:48 ?        00:00:00 /opt/vada/agent/collector_linux -c /opt/vada/agent
+root       21363   19888  0 10:50 pts/1    00:00:00 grep --color=auto vada
+```
+
+### Configurations for Security
+
+Modify permission of `/etc/hosts`.
+
+```bash
+$ chmod 600 /etc/hosts
+```
+
+Modify configurations for password.
+
+```bash
+$ vi /etc/login.defs
+
+PASS_MAX_DAYS   90
+PASS_MIN_DAYS   1
+PASS_WARN_AGE   7
+
+$ vi /etc/pam.d/common-password
+
+password        requisite                       pam_pwquality.so retry=3 lcredit=-1 ucredit=-1 dcredit=-1 ocredit=-1
+password        [success=2 default=ignore]      pam_unix.so obscure use_authtok try_first_pass yescrypt sha512 minlen=9
+
+$ chmod 400 /etc/shadow
+```
 
