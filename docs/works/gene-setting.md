@@ -2,7 +2,7 @@
 
 ## Install Ubuntu 22.04
 
-Using Ubuntu 22.04 botting USB, install ubuntu on NVMe 1.6 TB SSD.
+Using `Ubuntu 22.04` booting USB, install `Ubuntu` on NVMe 1.6 TB SSD.
 
 ## Configrations
 
@@ -75,11 +75,9 @@ MaxAuthTries 3
 Set `ufw` to allow `openssh`.
 
 ```bash
-$ vi /etc/ufw/applications.d/openssh-server
+$ vi /etc/ufw/before.rules
 
-ports=0000/tcp
-
-$ ufw allow OpenSSH
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 7774 -j ACCEPT
 ```
 
 Check listen status.
@@ -220,3 +218,53 @@ password        [success=2 default=ignore]      pam_unix.so obscure use_authtok 
 $ chmod 400 /etc/shadow
 ```
 
+## Applications
+
+### CARTA
+
+Install library packages.
+
+```bash
+$ apt install g++ make
+```
+
+#### MongoDB
+
+```bash
+$ apt update
+$ apt install curl GnuPG
+$ curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
+   sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
+   --dearmor
+$ echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+$ apt install -y mongodb-org
+```
+
+Configuration file: `/etc/mongod.conf`
+
+Start `mongod` process and verify it.
+
+```bash
+$ systemctl start mongod
+$ systemctl enable mongod
+$ systemctl status mongod
+```
+
+#### NGINX
+
+Install `nginx`.
+
+```bash
+$ apt install nginx
+```
+
+Configure `ufw` for `nginx`.
+
+```bash
+$ vi /etc/ufw/before.rules
+
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
+```
+
+$ add-apt-repository ppa:cartavis-team/carta
